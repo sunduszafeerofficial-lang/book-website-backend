@@ -1,0 +1,20 @@
+### TEST 1 - Server Check
+GET http://localhost:5000/health
+
+### TEST 2 - Order Banao
+POST http://localhost:5000/order-cod
+Content-Type: application/json
+
+{
+  "name": "Ali",
+  "phone": "9876543210",
+  "email": "ali@gmail.com",
+  "address": "123 Street",
+  "city": "Karachi",
+  "pincode": "75000",
+  "book": "My Book",
+  "price": 299
+}
+
+### TEST 3 - Sab Orders Dekho
+GET http://localhost:5000/order
